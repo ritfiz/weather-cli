@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-// weather-cli.js
-// (Your existing JavaScript code from the previous immersive will go here)
-// No changes are strictly needed to the JavaScript logic itself for packaging,
-// assuming it's saved in a file like 'weather-cli.js'.
-
 // Required modules
 const axios = require('axios'); // For making HTTP requests
 const yargs = require('yargs/yargs'); // For parsing command-line arguments
@@ -141,7 +136,7 @@ async function main() {
         console.log(`------------------------------------`);
         console.log(`${visuals.icon}  ${chalk.green(visuals.text)} (${description})`);
         console.log(`🌡️  Temperature: ${chalk.magentaBright(temperature.toFixed(1) + '°C')} (${tempFeel})`);
-        
+
         if (argv.details) {
             console.log(`🤔 Feels like: ${chalk.magenta(feelsLike.toFixed(1) + '°C')}`);
             console.log(`💧 Humidity: ${chalk.blue(humidity + '%')}`);
@@ -157,9 +152,9 @@ async function main() {
 
         // Temperature indication
         if (temperature > 30 && (country === 'IN' || city.toLowerCase().includes('delhi') || city.toLowerCase().includes('mumbai'))) { // Example for Indian context
-             console.log(chalk.redBright("☀️ It's a hot day, especially for this region!"));
+            console.log(chalk.redBright("☀️ It's a hot day, especially for this region!"));
         } else if (temperature < 10 && (country === 'IN' || city.toLowerCase().includes('shimla') || city.toLowerCase().includes('manali'))) {
-             console.log(chalk.cyanBright("❄️ It's cold, typical for hilly regions or winter!"));
+            console.log(chalk.cyanBright("❄️ It's cold, typical for hilly regions or winter!"));
         }
 
 
