@@ -4,7 +4,7 @@
   "description": "A simple CLI tool to fetch and display current weather information.",
   "main": "weather-cli.js",
   "bin": {
-    "weather-cli": "./weather-cli.js"
+    "weatherbaby": "./weather-cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
