@@ -10,4 +10,27 @@ Make sure you have Node.js (v14 or higher) installed.
 
 Install globally using npm:
 ```bash
-npm install -g weather-cli
+> npm install -g weatherbaby
+````
+
+````
+> weatherbaby -c 'Delhi'
+````
+## Troubleshooting
+
+### I do not have the openweathermap api key
+
+Go to https://home.openweathermap.org/api_keys and generate a key, then run
+
+    export OPENWEATHER_API_KEY="YOUR_API_KEY"
+
+### I have installed the package but cannot run the command
+
+Check if your path is correctly set
+
+
+    > npm get prefix
+
+    > export PATH="[prefix]/bin:$PATH" >> ~/.bash_profile
+    
+    > source ~/.bash_profile
