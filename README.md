@@ -1,4 +1,4 @@
-# Your Weather CLI Tool Name
+# WeatherBaby
 
 A simple CLI tool to fetch and display current weather information from OpenWeatherMap.
 
