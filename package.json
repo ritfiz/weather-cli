@@ -1,0 +1,39 @@
+{
+  "name": "weatherbaby",
+  "version": "1.0.0",
+  "description": "A simple CLI tool to fetch and display current weather information.",
+  "main": "weather-cli.js",
+  "bin": {
+    "weather-cli": "./weather-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/your-repo-name.git"
+  },
+  "keywords": [
+    "weather",
+    "cli",
+    "terminal",
+    "forecast",
+    "openweathermap",
+    "node"
+  ],
+  "author": "Rituraj <riturajsingh820@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.0.0",
+    "chalk": "^4.1.2",
+    "yargs": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/your-username/your-repo-name/issues"
+  },
+  "homepage": "https://github.com/your-username/your-repo-name#readme"
+}
