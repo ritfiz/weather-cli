@@ -16,6 +16,9 @@ Install globally using npm:
 ````
 > weatherbaby -c 'Delhi'
 ````
+
+Do raise an issue on github if you see anything no working
+
 ## Troubleshooting
 
 ### I do not have the openweathermap api key
@@ -28,9 +31,11 @@ Go to https://home.openweathermap.org/api_keys and generate a key, then run
 
 Check if your path is correctly set
 
+    # Get the npm prefix and store it in a variable
+    NPM_PREFIX=$(npm get prefix)
 
-    > npm get prefix
+    # Append to bash_profile
+    echo "export PATH=\"$NPM_PREFIX/bin:\$PATH\"" >> ~/.bash_profile
 
-    > export PATH="[prefix]/bin:$PATH" >> ~/.bash_profile
-    
-    > source ~/.bash_profile
+    # Then source it to apply changes
+    source ~/.bash_profile
